@@ -5,7 +5,7 @@ import 'package:masbaha/view/particle.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_utils/src/extensions/internacionalization.dart';
-import 'package:masbaha/controller/mylocaleController.dart';
+// import 'package:masbaha/controller/mylocaleController.dart';
 
 import 'main_drawer.dart';
 
@@ -162,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    MyLocaleController controllerLang = Get.find();
+    // MyLocaleController controllerLang = Get.find();
     return Scaffold(
       appBar: AppBar(
         title: Text("الصفحة الرئيسية"),
