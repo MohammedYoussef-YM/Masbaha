@@ -24,7 +24,7 @@ class _AppInfoDialogState extends State<AppInfoDialog> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('contanct_with_all'.tr, style: TextStyle(fontSize: 14)),
+                  Text('تواصل معنا'.tr, style: TextStyle(fontSize: 14)),
                   InkWell(
                     onTap: () {
                       Navigator.pop(context);
@@ -36,7 +36,7 @@ class _AppInfoDialogState extends State<AppInfoDialog> {
                           color: Theme.of(context).accentColor,
                           boxShadow: [BoxShadow(color: Colors.grey.withOpacity(0.2), spreadRadius: 1, blurRadius: 7, offset: Offset(0, 1))],
                         ),
-                        child: Icon(Icons.clear, size: 18, color: Color(0xFF916129))),
+                        child: Icon(Icons.clear, size: 18, color: Colors.black)),
                   ),
                 ],
               ),
@@ -46,11 +46,11 @@ class _AppInfoDialogState extends State<AppInfoDialog> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('part_one'.tr),
+                  Text('يوسف السودي'),
                   // Text('00967772270377', style: titilliumSemiBold.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE)),
                   FlatButton(
                     onPressed: phoneCall1,
-                    child: Text("009677767860",style:TextStyle(color: Theme.of(context).primaryColor)),),
+                    child: Text("00967774226619",style:TextStyle(color: Theme.of(context).primaryColor)),),
                 ],
               ),
               // SizedBox(height: 10,),
@@ -59,18 +59,14 @@ class _AppInfoDialogState extends State<AppInfoDialog> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text('part_two'),
+                  Text('وائل المغاربي'),
                   FlatButton(
                     onPressed: phoneCall2,
-                    child: Text("00967774226619",style:TextStyle(color: Theme.of(context).primaryColor)),),
+                    child: Text("00967771981596",style:TextStyle(color: Theme.of(context).primaryColor)),),
                 ],
               ),
               // SizedBox(height: 10,),
               Divider(thickness: .1, color: Colors.teal),
-              FlatButton(
-                child: Text("لزيارة موقعنا",style:TextStyle(color: Theme.of(context).primaryColor)),
-                // onPressed: () => _launchUrl('https://g.co/kgs/Q2vJwm'),
-              ),
             ],
           ),
         ),

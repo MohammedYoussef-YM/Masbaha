@@ -13,29 +13,21 @@ class SignOutConfirmationDialog extends StatelessWidget {
 
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 14, vertical: 50),
-          child: Text('want_to_sign_out'.tr, textAlign: TextAlign.center),
+          child: Text('هل تريد تسجيل الخروج ؟'.tr, textAlign: TextAlign.center),
         ),
 
-        Divider(height: 0, color: Colors.tealAccent),
+        Divider(height: 0, color: Colors.white),
         Row(children: [
 
           Expanded(child: InkWell(
             onTap: () {
               exit(0);
-              // Provider.of<AuthProvider>(context, listen: false).clearSharedData().then((condition) {
-              //   exit(0);
-                // Navigator.pop(context);
-                // Provider.of<ProfileProvider>(context,listen: false).clearHomeAddress();
-                // Provider.of<ProfileProvider>(context,listen: false).clearOfficeAddress();
-                // Navigator.pop(context);
-                // of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => AuthScreen()), (route) => false);
-              // });
             },
             child: Container(
               padding: EdgeInsets.all(12),
               alignment: Alignment.center,
               decoration: BoxDecoration(borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10))),
-              child: Text('YES'.tr, style: TextStyle(color: Colors.teal)),
+              child: Text('نعم'.tr, style: TextStyle(color: Colors.white)),
             ),
           )),
 
@@ -44,8 +36,8 @@ class SignOutConfirmationDialog extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.all(12),
               alignment: Alignment.center,
-              decoration: BoxDecoration(color: Colors.blueAccent, borderRadius: BorderRadius.only(bottomRight: Radius.circular(10))),
-              child: Text('NO'.tr, style: TextStyle(color: Colors.teal)),
+              decoration: BoxDecoration(color: Colors.teal, borderRadius: BorderRadius.only(bottomRight: Radius.circular(10))),
+              child: Text('لا'.tr, style: TextStyle(color: Colors.white)),
             ),
           )),
 

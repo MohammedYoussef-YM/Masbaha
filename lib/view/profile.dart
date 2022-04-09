@@ -24,7 +24,7 @@ class _ProfileState extends State<MyProfile> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.teal,  // Theme.of(context).accentColor,
-        title: Text("My Profile"),
+        title: Text("ملفي"),
         elevation: 1,
         centerTitle: true,
         //   automaticallyImplyLeading: false,
@@ -79,7 +79,7 @@ class _ProfileState extends State<MyProfile> {
                       ),
                       Container(
                         margin: EdgeInsets.only(top: 30),
-                        child: Text("Youssef Alsodi",style: TextStyle(fontSize: 20)),
+                        child: Text("مكتب وائل و يوسف",style: TextStyle(fontSize: 20)),
                       ),
                     ],
                   ),
@@ -300,7 +300,7 @@ class _BottomSectionState extends State<BottomSection> with TickerProviderStateM
           new TabBar(
             controller: _controller,
             tabs: _tabs,
-            labelColor: Theme.of(context).primaryColor,
+            labelColor: Theme.of(context).accentColor,
             indicatorColor: Theme.of(context).primaryColor,
           ),
           new SizedBox.fromSize(
